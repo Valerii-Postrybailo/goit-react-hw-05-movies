@@ -8,8 +8,9 @@ export default function Home() {
 
   useEffect(() => {
     apiResources.getTodayTrendingMovies().then(data => {
-      data.results.map(({ id, title }) =>
-        setMovies(m => [...m, { id, title }])
+      // console.log(data)
+      data.results.map(() =>
+        setMovies(data.results)
       );
     });
   }, []);
