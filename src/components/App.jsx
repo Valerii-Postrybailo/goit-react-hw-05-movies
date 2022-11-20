@@ -5,11 +5,11 @@ import Cast from './Cast/Cast';
 import Review from './Reviews/Reviews';
 
 const HomePage = lazy(() =>
-  import('../pages/HomePage/Home')
+  import('../pages/Home/Home')
 );
 
 const MoviesPage = lazy(() =>
-  import('../pages/MoviesPage/MoviesPage')
+  import('../pages/Movies/Movies')
 );
 
 const MovieDetailsPage = lazy(() =>

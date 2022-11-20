@@ -1,6 +1,6 @@
 import { useState, useRef } from 'react';
 import apiResources from 'services/themoviedb.org_API';
-import AdditionalInformation from 'components/MovieDetails/AdditionalInformation';
+import MovieDetails from 'components/MovieDetails/MovieDetails';
 import { Link, useParams, useLocation } from 'react-router-dom';
 import s from './MovieDetailsPage.module.css';
 import { useEffect } from 'react';
@@ -58,7 +58,7 @@ export default function MovieDetailsPage() {
           />
           <div className={s.text}>
             <h2>{`${title} (${release_date.slice(0, 4)})`}</h2>
-            <p>{`User score: ${vote_average * 10}%`}</p>
+            <p>{`User score: ${((vote_average * 10).toFixed(2))}%`}</p>
             <h3>Overview</h3>
             <p>{overview}</p>
             <h3>Genres</h3>
@@ -66,7 +66,7 @@ export default function MovieDetailsPage() {
           </div>
         </div>
         <p>Additional information</p>
-        <AdditionalInformation />
+        <MovieDetails />
       </>
     );
   }

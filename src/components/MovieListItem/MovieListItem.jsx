@@ -2,7 +2,7 @@ import { Link, useLocation, useSearchParams } from 'react-router-dom';
 import PropTypes from 'prop-types';
 
 export default function MovieListItem({ title, id }) {
-  console.log(id)
+  // console.log(id)
   // eslint-disable-next-line no-unused-vars
   const [searchParams, _setSearchParams] = useSearchParams();
 

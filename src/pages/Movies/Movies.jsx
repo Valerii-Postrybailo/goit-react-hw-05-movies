@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { useLocation, useSearchParams } from 'react-router-dom';
 import MoviesList from 'components/MoviesList/MoviesList';
 import apiResources from 'services/themoviedb.org_API';
-import s from './MoviesPage.module.css';
+import s from './Movies.module.css';
 
 export default function MoviesPage() {
   const [query, setQuery] = useState('');

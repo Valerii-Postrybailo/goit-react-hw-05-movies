@@ -1,3 +1,3 @@
-export * from './HomePage';
-export * from './MoviesPage';
+export * from './Home';
+export * from './Movies';
 export * from './MovieDetailsPage';

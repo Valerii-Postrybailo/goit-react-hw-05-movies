@@ -7,7 +7,7 @@ export const getTodayTrendingMovies = async () => {
   const response = await axios.get(
     `/trending/movie/day?api_key=${API_KEY}`
   );
-    console.log(response.data)
+    // console.log(response.data)
     return response.data;
 };
 

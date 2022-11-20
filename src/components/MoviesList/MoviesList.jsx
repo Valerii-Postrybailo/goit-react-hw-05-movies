@@ -2,7 +2,7 @@ import MovieListItem from '../MovieListItem/MovieListItem';
 import PropTypes from 'prop-types';
 
 export default function MoviesList({ movies }) {
-  console.log(movies)
+  // console.log(movies)
   return (
     <>
       <ul>
