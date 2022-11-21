@@ -8,10 +8,8 @@ export default function Home() {
 
   useEffect(() => {
     apiResources.getTodayTrendingMovies().then(data => {
-      // console.log(data)
-      data.results.map(() =>
-        setMovies(data.results)
-      );
+      // console.log(data.results)
+      setMovies(data.results)
     });
   }, []);
 

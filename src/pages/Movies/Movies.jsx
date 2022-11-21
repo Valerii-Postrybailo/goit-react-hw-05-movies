@@ -18,10 +18,8 @@ export default function MoviesPage() {
     try {
       const response = apiResources.fetchMoviesByQuery(search);
         response.then(data => {
-          console.log(data)
-          data.data.results.map(() =>
-            setMoviesSearch(data.data.results)
-          );
+          // console.log(data)
+          setMoviesSearch(data.data.results)
         });
       } catch (error) {}
     }
